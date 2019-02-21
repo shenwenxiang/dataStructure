@@ -1,4 +1,4 @@
-package com.shenwenxiang;
+package stack;
 import java.util.*;
 /**
  * 使用栈校验括号匹配
