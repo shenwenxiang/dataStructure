@@ -1,5 +1,7 @@
 package sort;
 
+import java.util.Arrays;
+
 /*
     冒泡排序法
  */
@@ -11,7 +13,7 @@ public class DubbleSort {
         for (int i = 0; i < length; i++){
             //退出冒泡标志
             boolean flag = false;
-            for (int j = 0; j < n - i; j++){
+            for (int j = 0; j < length - i - 1; j++){
                 if (a[j] > a[j+1]){
                     //交换位置
                     int tmp = a[j];
@@ -25,5 +27,11 @@ public class DubbleSort {
                 break;
             }
         }
+    }
+
+    public static void main(String[] args) {
+        int[] a = {13,1,7,10,43,2};
+        new DubbleSort().dubbleSort(a,a.length);
+        System.out.println(Arrays.toString(a));
     }
 }
